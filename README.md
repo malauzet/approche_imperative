@@ -31,3 +31,7 @@
 22. **InteractifStockageNombre** ⭐ : Menu pour ajouter et afficher des nombres dans un tableau dynamique
 23. **InteractifFibonacci** ⭐ : Demander un rang N et calculer le N-ième nombre de la suite de Fibonacci
 24. **Interactif21Batons** ⭐ : Jeu des 21 bâtons contre l'ordinateur
+
+### Bonus personnel
+
+25. **Interactif21BatonsNiveau2** ⭐⭐ : Tactique plus optimale pour l'ordinateur que dans le niveau précédent
