@@ -10,7 +10,7 @@ public class InteractifSommeArithmetique {
         Scanner scanner = new Scanner(System.in);
 
         // Remarque : Aucune prise en compte des erreurs dû à la taille des int.
-        System.out.println("Veuillez entrer un nombre entier (n) pour caculer la somme de 1 à n : ");
+        System.out.print("Veuillez entrer un nombre entier (n) pour caculer la somme de 1 à n : ");
         long nb = scanner.nextLong();
         long total = 0;
 
@@ -18,6 +18,6 @@ public class InteractifSommeArithmetique {
             total += i;
         }
 
-        System.out.println("La somme de 1 à " + nb + " est égale à : " + total);
+        System.out.print("La somme de 1 à " + nb + " est égale à : " + total);
     }
 }
