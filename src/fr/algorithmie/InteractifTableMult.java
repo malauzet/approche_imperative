@@ -10,14 +10,15 @@ public class InteractifTableMult {
         // le programme affiche la table de multiplication de ce nombre.
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Veuillez entrer un nombre entre 1 et 10 pour afficher sa table de multiplication : ");
+        System.out.print("Veuillez entrer un nombre entre 1 et 10 pour afficher sa table de multiplication : ");
         while (scanner.hasNextLine()) {
             int nb = scanner.nextInt() ;
 
             if (nb < 1 || nb > 10) {
-                System.out.println("Veuillez entrer un nombre entre 1 et 10 : ");
+                System.out.print("Veuillez entrer un nombre entre 1 et 10 : ");
             }
             else {
+                System.out.println("===== Tableau de " + nb + " ===== ");
                 for (int i = 1; i <= 10; i++) {
                     System.out.println(nb + " * " + i + " = " + (nb * i));
                 }
