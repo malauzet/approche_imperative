@@ -13,16 +13,14 @@ public class InversionContenu {
         }
 
         // Consigne : Afficher l’ensemble des éléments des 2 tableaux
-        System.out.println("Affichage des éléments du tableau :");
+        System.out.print("Affichage des éléments du tableau : ");
         for (int i = 0; i < array.length; i++) {
-            System.out.println("index " + i + " : " + array[i]);
+            System.out.print(array[i] + " ");
         }
 
-        System.out.println("\n-------------\n");
-
-        System.out.println("Affichage des éléments de la copie inversée du tableau :");
+        System.out.print("\nAffichage des inversée du tableau : ");
         for (int i = 0; i < arrayCopy.length; i++) {
-            System.out.println("index " + i + " : " + arrayCopy[i]);
+            System.out.print(arrayCopy[i] + " ");
         }
     }
 }
