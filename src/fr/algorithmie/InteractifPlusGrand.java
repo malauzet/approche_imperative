@@ -13,7 +13,7 @@ public class InteractifPlusGrand {
         int max = 0;
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("Veuillez entrer un nombre entier (Reste : " + (10 - i) + ") : ");
+            System.out.print("Veuillez entrer un nombre entier (Reste : " + (10 - i) + ") : ");
             int nb = scanner.nextInt() ;
             array[i] = nb;
         }
@@ -23,6 +23,6 @@ public class InteractifPlusGrand {
                 max = array[i];
             }
         }
-        System.out.println("Le nombre maximum dans votre saisit est : " + max);
+        System.out.println("Le nombre maximum dans votre saisie est : " + max);
     }
 }
