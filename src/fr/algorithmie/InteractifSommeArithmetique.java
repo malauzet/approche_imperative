@@ -10,7 +10,7 @@ public class InteractifSommeArithmetique {
         Scanner scanner = new Scanner(System.in);
 
         // Remarque : Aucune prise en compte des erreurs dû à la taille des int.
-        System.out.print("Veuillez entrer un nombre entier (n) pour caculer la somme de 1 à n : ");
+        System.out.print("Veuillez entrer un nombre entier (n) pour calculer la somme de 1 à n : ");
         long nb = scanner.nextLong();
         long total = 0;
 
