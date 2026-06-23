@@ -11,15 +11,15 @@ public class InteractifTantQue {
         // 2) Si le nombre est compris entre 1 et 10, le programme affiche ce nombre et se termine.
         Scanner scanner = new Scanner(System.in) ;
 
-        System.out.println("Veuillez entrer un nombre entre 1 et 10 : ");
+        System.out.print("Veuillez entrer un nombre entre 1 et 10 : ");
         while (scanner.hasNextLine()) {
             int nb = scanner.nextInt() ;
 
             if (nb < 1 || nb > 10) {
-                System.out.println("Veuillez entrer un nombre entre 1 et 10 : ");
+                System.out.print("Veuillez entrer un nombre entre 1 et 10 : ");
             }
             else {
-                System.out.println("Le nombre " + nb + " est bien entre 1 et 10 !");
+                System.out.print("Le nombre " + nb + " est bien entre 1 et 10 !");
                 break;
             }
         }
