@@ -16,14 +16,15 @@ public class Interfactif21Batons {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Voulez-vous commencer en premier ? (O/N)");
-        String choix = scanner.next();
+        double random =  Math.random();
+        boolean userStart = random < 0.5;
 
         while (nbBatons > 0) {
 
-            if (choix.equals("O") || choix.equals("Oui") || choix.equals("o") ||  choix.equals("oui")) {
-                System.out.println("Il reste " + nbBatons + " batons dans en jeu.");
-                System.out.println("Combien de bâtons prenez-vous ? (1, 2 ou 3)");
+            System.out.println("Il reste " + nbBatons + " batons dans en jeu.");
+
+            if (userStart) {
+                System.out.print("Prenez entre 1 et 3 bâtons : ");
                 nbBatPris = scanner.nextInt();
 
                 // On prend le nombre min si on entre un chiffre < 1 et le max si on entre un > 3.
@@ -32,7 +33,7 @@ public class Interfactif21Batons {
 
                 nbBatons = nbBatons - nbBatPris;
 
-                if (nbBatons <= 0) System.out.println("Tu as perdu !");
+                if (nbBatons <= 0) System.out.print("Tu as perdu !");
                 else {
                     System.out.println("Il reste " + nbBatons + " batons dans en jeu.");
 
@@ -42,11 +43,10 @@ public class Interfactif21Batons {
 
                     nbBatons = nbBatons - nbRandom;
 
-                    if (nbBatons <= 0) System.out.println("Tu as gagné !");
+                    if (nbBatons <= 0) System.out.print("Tu as gagné !");
                 }
             }
             else {
-                System.out.println("Il reste " + nbBatons + " batons dans en jeu.");
 
                 int nbRandom = (int) ((3 * Math.random()) + 1);
 
@@ -54,7 +54,7 @@ public class Interfactif21Batons {
 
                 nbBatons = nbBatons - nbRandom;
 
-                if (nbBatons <= 0) System.out.println("Tu as gagné !");
+                if (nbBatons <= 0) System.out.print("Tu as gagné !");
                 else {
                     System.out.println("Il reste " + nbBatons + " batons dans en jeu.");
                     System.out.println("Combien de bâtons prenez-vous ? (1, 2 ou 3)");
@@ -66,7 +66,7 @@ public class Interfactif21Batons {
 
                     nbBatons = nbBatons - nbBatPris;
 
-                    if (nbBatons <= 0) System.out.println("Tu as perdu !");
+                    if (nbBatons <= 0) System.out.print("Tu as perdu !");
                 }
             }
         }
