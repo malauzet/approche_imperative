@@ -20,16 +20,14 @@ public class FabriquerMur {
     // Consigne : Cette méthode doit produire un algorithme qui retourne s’il est possible ou non de
     // fabriquer un mur avec des briques de longueur 1 et des briques de longueur 5.
     static boolean fabriquerMur(int nbSmall, int nbBig, int longueur) {
-        boolean resultat = false;
+        for (int big = 0; big <= nbBig; big++) {
+            int reste = longueur - (big * 5);
 
-        int smallB = 1;
-        int bigB = 5;
-
-        int tailleMax = (smallB * nbSmall) + (bigB * nbBig);
-
-        resultat = tailleMax >= longueur;
-
-        return resultat;
+            if (reste >= 0 && reste <= nbSmall) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static void verifier(int nbSmall, int nbBig, int longueur, boolean b) {
